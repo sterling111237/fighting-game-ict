@@ -21,7 +21,7 @@ const backgroundLayer1 = new Sprite({
     x: 0,
     y: 0
   },
-  imageSrc: './img/background/Layer_0001_8.png'
+  imageSrc: '.\img\background\Layer_0001_8.png'
 })
 
 const backgroundLayer2 = new Sprite({
@@ -29,7 +29,78 @@ const backgroundLayer2 = new Sprite({
     x: 0,
     y: 0
   },
-  imageSrc: './img/background/Layer_0002_7.png'
+  imageSrc: '.\img\background\Layer_0002_7.png'
+})
+
+const backgroundLayer3 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0003_6.png'
+})
+
+const backgroundLayer4 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0004_Lights.png'
+})
+
+const backgroundLayer5 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0005_5.png'
+})
+
+const backgroundLayer6 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0006_4.png'
+})
+
+const backgroundLayer7 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0007_Lights.png'
+})
+
+const backgroundLayer8 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0008_3.png'
+})
+const backgroundLayer9 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0009_2.png'
+})
+
+const backgroundLayer10 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0010_1.png'
+})
+
+const backgroundLayer11 = new Sprite({
+  position: {
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background/Layer_0011_0.png'
 })
 
 const player = new Fighter({
@@ -45,7 +116,7 @@ const player = new Fighter({
     x: 0,
     y: 0
   },
-  imageSrc: './img/KnightIdle_strip.png',
+  imageSrc: './img/noBKG_KnightIdle_strip.png',
   framesMax: 15,
   scale: 2.5,
   offset: {
@@ -54,31 +125,27 @@ const player = new Fighter({
   },
   sprites: {
     idle: {
-      imageSrc: './img/samuraiMack/Idle.png',
-      framesMax: 8
+      imageSrc: './img/noBKG_KnightIdle_strip.png',
+      framesMax: 15
     },
     run: {
-      imageSrc: './img/samuraiMack/Run.png',
+      imageSrc: './img/noBKG_KnightRun_strip.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: './img/samuraiMack/Jump.png',
-      framesMax: 2
-    },
-    fall: {
-      imageSrc: './img/samuraiMack/Fall.png',
-      framesMax: 2
+      imageSrc: './img/noBKG_KnightJumpAndFall_strip.png',
+      framesMax: 14
     },
     attack1: {
-      imageSrc: './img/samuraiMack/Attack1.png',
+      imageSrc: './img/noBKG_KnightAttack_strip.png',
       framesMax: 6
     },
     takeHit: {
-      imageSrc: './img/samuraiMack/Take Hit - white silhouette.png',
+      imageSrc: './img/',
       framesMax: 4
     },
     death: {
-      imageSrc: './img/samuraiMack/Death.png',
+      imageSrc: './img/noBKG_KnightDeath_strip.png',
       framesMax: 6
     }
   },
@@ -106,7 +173,7 @@ const enemy = new Fighter({
     x: -50,
     y: 0
   },
-  imageSrc: './img/kenji/Idle.png',
+  imageSrc: './img/spr_Idle_strip.png',
   framesMax: 4,
   scale: 2.5,
   offset: {
@@ -115,15 +182,15 @@ const enemy = new Fighter({
   },
   sprites: {
     idle: {
-      imageSrc: './img/kenji/Idle.png',
+      imageSrc: './img/spr_Idle_strip.png',
       framesMax: 4
     },
     run: {
-      imageSrc: './img/kenji/Run.png',
+      imageSrc: './img/spr_Walk_strip.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: './img/kenji/Jump.png',
+      imageSrc: './img/spr/spr_Jump_strip.png',
       framesMax: 2
     },
     fall: {
@@ -131,7 +198,7 @@ const enemy = new Fighter({
       framesMax: 2
     },
     attack1: {
-      imageSrc: './img/kenji/Attack1.png',
+      imageSrc: './img/spr_Attack_strip.png',
       framesMax: 4
     },
     takeHit: {
@@ -139,7 +206,7 @@ const enemy = new Fighter({
       framesMax: 3
     },
     death: {
-      imageSrc: './img/kenji/Death.png',
+      imageSrc: './img/spr_Death_strip.png',
       framesMax: 7
     }
   },
@@ -335,4 +402,4 @@ window.addEventListener('keyup', (event) => {
       keys.ArrowLeft.pressed = false
       break
   }
-})
+}) 
